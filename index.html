@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: outfit;
+      src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    }
+
+    @font-face {
+      font-family: "young serif";
+      src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      background-color: rgb(253, 233, 236);
+    }
+
+    main {
+      text-align: left;
+      width: 500px;
+      height: 100%;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      margin: 20px 0 20px 0;
+    }
+
+    h1,
+    h2 {
+      font-family: "young serif";
+    }
+
+    p,
+    h3,
+    table,
+    legend,
+    li {
+      font-family: outfit;
+    }
+
+    h1 {
+      margin: 20px 0 20px 0;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .prep {
+      background-color: rgb(253, 233, 236);
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 40px;
+    }
+
+    .prep h3 {
+      padding: 10px 0 0 10px;
+      color: rgb(90, 15, 90);
+    }
+
+    .prep span {
+      font-weight: bold;
+      color: rgb(39, 36, 36);
+    }
+
+    .prep li {
+      margin: 10px;
+      list-style-position: inside;
+    }
+
+    .prep li::marker {
+      color: rgb(90, 15, 90);
+    }
+
+    h2:nth-child(5) {
+      color: rgb(134, 36, 36);
+    }
+
+    ul:nth-child(6) li {
+      list-style-position: inside;
+    }
+
+    ul:nth-child(6) li:last-child {
+      margin-bottom: 40px;
+    }
+
+    ul:nth-child(6) li::marker {
+      color: rgb(134, 36, 36);
+    }
+
+    ul:nth-child(6) li {
+      margin: 10px;
+    }
+
+    .ins h2 {
+      margin-top: 20px;
+      color: rgb(134, 36, 36);
+    }
+
+    .in span {
+      font-weight: bold;
+      color: rgb(39, 36, 36);
+    }
+
+    .in li::marker {
+      color: rgb(134, 36, 36);
+      font-weight: bold;
+      margin: -50px;
+    }
+
+    .in li {
+      padding-left: 20px;
+    }
+
+    .in {
+      margin: 20px;
+    }
+
+    .ins {
+      border-top: 1px solid rgb(161, 160, 160);
+    }
+
+    .in li:last-child {
+      margin-bottom: 40px;
+    }
+
+    .nutr {
+      border-top: 1px solid rgb(161, 160, 160);
+    }
+
+    .nutr h2 {
+      margin: 20px 0 20px 0;
+      color: rgb(134, 36, 36);
+    }
+
+    .nutr table {
+      width: 100%;
+    }
+
+    .nutr table {
+      border-collapse: collapse;
+    }
+
+    .nutr tr {
+      border-bottom: 1px solid rgb(161, 160, 160);
+    }
+
+    .nutr tr:last-child {
+      border-bottom: none;
+    }
+
+    .nutr legend {
+      margin-bottom: 20px;
+    }
+
+    .nutr td, th {
+      padding: 10px 10px 10px 20px;
+    }
+
+    .nutr th {
+      color: rgb(134, 36, 36);
+    }
+
+    img {
+      width: 500px;
+      height: 100%;
+      border-radius: 5px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <img src="./assets/images/image-omelette.jpeg" alt="Omelette">
+
+    <h1>Simple Omelette Recipe</h1>
+
+    <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection,
+      optionally filled with your choice of cheese, vegetables, or meats.</p>
+
+    <div class="prep">
+      <h3>Preparation time</h3>
+      <ul>
+        <li><span>Total:</span> Approximately 10 minutes</li>
+        <li><span>Preparation:</span> 5 minutes</li>
+        <li><span>Cooking:</span> 5 minutes</li>
+      </ul>
+    </div>
+
+    <h2>Ingredients</h2>
+
+    <ul>
+      <li>2-3 large eggs</li>
+      <li>Salt, to taste</li>
+      <li>Pepper, to taste</li>
+      <li>1 tablespoon of butter or oil</li>
+      <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+    </ul>
+
+    <div class="ins">
+      <h2>Instructions</h2>
+
+      <ol class="in">
+        <li><span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well
+          mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+        <li><span>Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li><span>Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to
+          ensure the eggs evenly coat the surface.</li>
+        <li><span>Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny
+          in
+          the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        <li><span>Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the
+          fillings. Let it cook for another minute, then slide it onto a plate.</li>
+        <li><span>Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+    </div>
+
+    <div class="nutr">
+    <h2>Nutrition</h2>
+
+    <table>
+      <legend>The table below shows nutritional values per serving without the additional fillings.</legend>
+
+      <tbody>
+        <tr>
+          <td>Calories</td>
+          <th>277kcal</th>
+        </tr>
+        <tr>
+          <td>Carbs</td>
+          <th>0g</th>
+        </tr>
+        <tr>
+          <td>Protein</td>
+          <th>20g</th>
+        </tr>
+        <tr>
+          <td>Fat</td>
+          <th>22g</th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/savchrisostomidhs">savchrisostomidhs</a>.
+    </div>
+  </main>
+</body>
+
+</html>
